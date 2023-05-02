@@ -1,0 +1,28 @@
+{{ $style := resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.main.scss" . | toCSS | minify | fingerprint }}
+<head>
+    <title>{{ .Site.Title }} | {{ .Site.Params.affiliation }}</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ .Site.Params.description }}">
+    {{ with .Site.Params.keywords }}
+        <meta name="keywords" content="{{ . }}">
+    {{ end }}
+    {{ with .Site.Params.canonical }}
+        <link rel="canonical" href="{{ . }}"/>
+    {{ end }}
+
+    <link rel="icon" media="(prefers-color-scheme:dark)" href="{{ .Site.Params.favicon_dark }}" type="image/png" />
+    <link rel="icon" media="(prefers-color-scheme:light)" href="{{ .Site.Params.favicon }}" type="image/png" />
+    <script src="{{ "assets/js/favicon-switcher.js" | relURL }}" type="application/javascript"></script>
+
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin=anonymous>
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin=anonymous>
+    <link rel="stylesheet" href="{{ "css/publications.css" | relURL }}">
+    <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}">
+
+
+    {{ block "head" . }}
+    {{ end }}
+</head>

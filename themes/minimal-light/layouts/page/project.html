@@ -1,0 +1,33 @@
+{{ .Page.Content }}
+{{ $p := .Page }}
+{{ $data := getJSON (printf "data/%s.json" .File.BaseFileName) }}
+{{ $filename := replace .File.BaseFileName "^p" "" }}
+<div class="publications">
+  <ol class="bibliography">
+{{ range .Page.Params.items }}
+    <li class="row">
+
+      <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;">
+        <img src="{{.Thumbnail}}" class="{{cond (isset . "Gallery") "open-gallery" ""}} teaser img-fluid z-depth-1" data-gallery="{{.Gallery}}">
+        {{if isset . "Gallery"}}
+        <abbr class="badge">Gallery</abbr>
+        {{end}}
+      </div>
+
+      <div class="col-sm-9" style="position: relative;padding-left: 20px; margin-bottom: 20px;">
+        <div class="title"><strong><a href="{{.Url}}">{{.Title}}</a></strong></div>
+        <div class="desc" style="margin-bottom: 10px">{{$p.RenderString .Description}}</div>
+        <div class="links">
+          {{ range .Links }}
+          <a href="{{.Url}}" class="btn btn-sm" role="button" target="_blank" style="font-size:16px;">{{.Label}}</a>
+          {{ end }}
+        </div>
+      </div>
+    </li>
+{{ end }}
+</ol>
+</div>
+
+<script>
+    document[{{printf "%s_DATA" (upper $filename)}}]= {{ $data }};
+</script>

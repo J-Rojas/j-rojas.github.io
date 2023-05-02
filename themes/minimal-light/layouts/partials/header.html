@@ -1,0 +1,45 @@
+{{ if .Site.Params.avatar }}
+<a class="image avatar"><img src="{{ .Site.Params.avatar }}" alt="avatar" /></a>
+{{ end }}
+<h1>{{ .Site.Title }}</h1>
+{{ if .Site.Params.position }}
+<position style="font-size:1.10rem;">{{ .Site.Params.position }}</position>
+<br>
+{{ end }}
+{{ if .Site.Params.affiliation }}
+<a href="{{ .Site.Params.affiliation_link }}" rel="noopener"><autocolor>{{ .Site.Params.affiliation }}</autocolor></a>
+<br>
+{{ end }}
+{{ if .Site.Params.email }}
+<email>{{ .Site.Params.email }}</email>
+{{ end }}
+<br>
+<br>
+<div class="social-icons">
+    {{ if .Site.Params.google_scholar }}
+    <a style="margin: 0 5px 0 0" href="{{ .Site.Params.google_scholar }}">
+        <i class="ai ai-google-scholar" style="font-size:1.2rem"></i>
+    </a>  
+    {{ end }}
+    {{ if .Site.Params.cv_link }}
+    <a style="margin: 0 5px 0 0" href="{{ .Site.Params.cv_link }}">
+        <i class="ai ai-cv" style="font-size:1.3rem;"></i>
+    </a>
+    {{ end }}
+    {{ if .Site.Params.github_link }}
+    <a style="margin: 0 5px 0 0" href="{{ .Site.Params.github_link }}">
+        <i class="fab fa-github"></i>
+    </a>
+    {{ end }}
+    {{ if .Site.Params.linkedin }}
+    <a style="margin: 0 5px 0 0" href="{{ .Site.Params.linkedin }}">
+        <i class="fab fa-linkedin"></i>
+    </a>
+    {{ end }}
+    {{ if .Site.Params.twitter }}
+    <a style="margin: 0 0 0 0" href="{{ .Site.Params.twitter }}">
+        <i class="fab fa-twitter"></i>
+    </a>
+    {{ end }}
+</div>
+<br>

@@ -1,0 +1,9 @@
+[submodule "themes/almeida-cv"]
+	path = themes/almeida-cv
+	url = https://github.com/ineesalmeida/almeida-cv.git
+[submodule "themes/hugo-academic"]
+	path = themes/hugo-academic
+	url = https://github.com/wowchemy/starter-hugo-academic
+[submodule "themes/jekyll-import/minimal-light"]
+	path = themes/jekyll-import/minimal-light
+	url = https://github.com/yaoyao-liu/minimal-light.git

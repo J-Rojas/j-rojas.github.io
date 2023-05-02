@@ -1,0 +1,50 @@
+{{ $data := or (index .Site.Data .Site.Language.Lang).content .Site.Data.content }}
+{{ .Scratch.Set "data" $data }}
+
+<!DOCTYPE html>
+<html lang="en">
+    {{ partial "head.html" . }}
+    <body>
+        <div class="wrapper">
+            <header>
+                {{ partial "header.html" . }}
+                {{ with .Site.GetPage "skills.md" }}
+                    {{.Render "skills_sidebar" }}
+                {{ end }}
+            </header>
+
+            {{ partial "navbar.html" }}
+
+            {{ range where (where .Pages.ByWeight "Params.draft" "==" false) "Params.weight" "!=" 0 }}
+                <section>
+                    {{ if .Params.layout }}
+                        {{ .Render }}
+                    {{ else }}
+                        {{ .Content }}
+                    {{ end }}
+                    <br>
+                </section>
+            {{ end }}
+
+            <section>
+                {{ .Content }}
+            </section>
+
+            {{ with .Site.GetPage "skills.md" }}
+            <section>
+                {{.Render }}
+            </section>
+            {{ end }}
+
+            <footer>
+                {{ partial "footer.html" . }}
+            </footer>
+        </div>
+
+        {{ partial "gallery.html" . }}
+
+        {{ partial "scripts.html" . }}
+        
+
+    </body>
+</html>

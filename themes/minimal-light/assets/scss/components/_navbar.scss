@@ -1,0 +1,38 @@
+.navbar {
+
+    margin-left: 310px;
+    width: 650px;
+    margin-bottom: 2.5em;
+    position: fixed;
+    background-color: white;
+    z-index: 10;
+
+    &:first-of-type {
+        padding-top:1em;
+    }
+
+    & ul {
+        list-style-type: none;
+        display: flex;
+        padding-left: 0;
+        flex-direction: row;
+        & li {
+            max-width: 150px;
+            margin-right: 60px;
+        }
+    }
+
+    & a {
+        cursor: pointer;
+        font-size: 1.25em;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .navbar {
+        background-color: $color-page-background-dark;
+    }
+}

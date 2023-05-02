@@ -1,0 +1,26 @@
+languageCode = "en-us"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+enableEmoji = true
+theme ="minimal-light"
+
+contentDir = "content"
+layoutDir = "layouts"
+
+baseURL = "https://example.com/"
+Title = "Jose Rojas"
+#googleAnalytics = ""
+
+[[module.mounts]]
+    source = "assets/scss"
+    target = "assets/css"
+
+[params]
+col = "#433443"
+avatar = "img/profile.png"
+email = "jlrojas (at) utaustin.edu"
+position = "MSCS Graduate Student"
+affiliation = "University of Texas at Austin"
+github_link = "https://github.com/J-Rojas"
+linkedin = "https://linkedin.com/in/jrojas78"
+cv_link = "https://docs.google.com/document/d/1Ba9JEHEeGtEwPoffj2TC8L6RHGp43D5M29q2AxpcMSE/edit#heading=h.s89r76obiuxy"

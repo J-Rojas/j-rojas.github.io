@@ -1,0 +1,22 @@
+{{ with .Page.Params.skills }}
+<div class="show-960">
+    <div class="sideSection__heading">
+        <h2 class="sideSection__title">Skills</h2>
+    </div>
+    <div class="sideSection__content">
+        <div class="skills">
+            {{ range . }}
+            <ul class="skills__group">
+                <span class="label">{{ .Family | safeHTML }}</span>
+                <br>
+                <span class="items">
+                {{ range .Items }}
+                <li>{{ . | safeHTML }}</li>
+                {{ end }}
+                </span>
+            </ul>
+            {{ end }}
+        </div>
+    </div>
+</div>
+{{ end }}
