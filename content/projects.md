@@ -11,7 +11,7 @@ items:
       Description: A data visualization tool oriented towards multi-model engineering and scientific datasets. I built this tool using Python, Typescript, Vue with integration with ROS. I have used this during my robotics research for visualizing real time and prerecorded data, but have adapted it for other visualization and application related tasks.
       Links:
         - Label: Article
-          Url:
+          Url: https://towardsdatascience.com/autonomous-driving-dataset-visualization-with-python-and-vizviewer-24ce3d3d11a0
         - Label: Website
           Url: https://vizviewer.com
 

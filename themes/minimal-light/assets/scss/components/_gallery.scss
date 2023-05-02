@@ -15,6 +15,7 @@
   
   /* Style for the gallery popup */
   .gallery-popup {
+    z-index: 10;
     position: fixed;
     top: 0;
     left: 0;

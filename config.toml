@@ -9,7 +9,6 @@ layoutDir = "layouts"
 
 baseURL = "https://example.com/"
 Title = "Jose Rojas"
-#googleAnalytics = ""
 
 [[module.mounts]]
     source = "assets/scss"
@@ -24,3 +23,4 @@ affiliation = "University of Texas at Austin"
 github_link = "https://github.com/J-Rojas"
 linkedin = "https://linkedin.com/in/jrojas78"
 cv_link = "https://docs.google.com/document/d/1Ba9JEHEeGtEwPoffj2TC8L6RHGp43D5M29q2AxpcMSE/edit#heading=h.s89r76obiuxy"
+google_analytics = "G-NJRLFF42C7"

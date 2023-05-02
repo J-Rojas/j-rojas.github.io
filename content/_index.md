@@ -9,7 +9,7 @@ date: 2022-10-24
 
 ## Publications & Articles
 
-- **[2020]** ["Visualization of driving dataset using VizViewer"](https://bit.ly/3nBlX7A) *Towards Data Science*.
+- **[2020]** ["Visualization of driving dataset using VizViewer"](https://towardsdatascience.com/autonomous-driving-dataset-visualization-with-python-and-vizviewer-24ce3d3d11a0) *Towards Data Science*.
 - **[2018]** ["Semantic Segmentation & Deep Learning for Autonomous Driving Simulation"](https://medium.com/towards-artificial-intelligence/semantic-segmentation-deep-learning-for-autonomous-driving-simulation-part-1-271cd611eed3) *Towards AI*.
 
 ## Undergraduate Research

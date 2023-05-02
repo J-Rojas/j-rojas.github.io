@@ -4,6 +4,31 @@
 <!DOCTYPE html>
 <html lang="en">
     {{ partial "head.html" . }}
+    {{ if .Site.Params.google_analytics }}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{.Site.Params.google_analytics}}"></script>
+    <script>
+
+    function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{.Site.Params.google_analytics}}', {
+        'user_id': getParameterByName('cid') || '__unknown'
+    });
+    </script>
+    {{ end }}
+
     <body>
         <div class="wrapper">
             <header>

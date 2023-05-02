@@ -52,7 +52,16 @@
     }
 
     // Create a function to open the gallery
-    function openGallery(images) {
+    function openGallery(images, name) {
+
+        {{ if .Site.Params.google_analytics }}
+        gtag('event', 'click', {
+            'event_category': 'Gallery',
+            'event_label': name,
+            'transport_type': 'beacon'
+        });
+        {{ end }}
+
 
       let index = 0
       let src = images[index].full;
@@ -111,7 +120,7 @@
         let addr = e.srcElement.dataset['gallery']
         let [variable, key] = addr.split(":")
         let data = document[variable + '_DATA']['items'][key];
-        openGallery(data);
+        openGallery(data, addr);
       });
     }
 })()
