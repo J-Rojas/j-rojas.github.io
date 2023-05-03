@@ -19,10 +19,10 @@ items:
       Title: OpenCaret
       Url: https://github.com/frk2/opencaret
       Thumbnail: http://img.youtube.com/vi/Oun_skUYX0U/0.jpg
-      Description: This is a robotics project enabling augmention of consumer vehicles for autonmous vehicle research. Our effort was focused on reverse-engineering the control systems to allow full autonomous control a vehicle. I successfully researched and developed support for a new vehicle (Hyundai Sonata).  We were able to demonstrate autonmous control of steering and vehicle speed using Arduino and ROS along with a sensor suite of cameras, GNSS-RTK, radar. Our team's effort was published in the [New York Times](https://nyti.ms/2Da9VgT).
+      Description: This is a robotics project enabling augmention of consumer vehicles for autonmous vehicle research. Our effort was focused on reverse-engineering the control systems to allow full autonomous control a vehicle. I successfully researched and developed support for a new vehicle (Hyundai Sonata).  We were able to demonstrate autonmous control of steering and vehicle speed using Arduino and ROS along with a sensor suite of cameras, GNSS-RTK, radar. Our team's effort was published in the [New York Times](https://archive.is/UdxRY).
       Links:
         - Label: Article
-          Url: https://nyti.ms/2Da9VgT
+          Url: https://archive.is/UdxRY
         - Label: GitHub
           Url: https://github.com/frk2/opencaret
 
@@ -55,4 +55,4 @@ items:
 
 ## Projects
 
-The projects showcased below are non-funded, non-cousework, indepedent research based on my curiousity and interest in autonomy. These projects may provide an impression of my experience and ability to research, experiment, and achieve goals under uncertainty. While my previous research experience is focused on automomous vehicles, I am interested in expanding my knowledge and skills into other topics.
+The research projects presented below are derived from my interest in the field of autonomy. Although I drew some background context from previous MOOC courses, these projects are entirely self-initiated and exploratory in nature. Through these projects, I have honed my research skills and ability to experiment, achieve goals, and thrive under uncertain conditions. While my research experience primarily revolves around autonomous vehicles, I am eager to broaden my horizons and explore other related topics.

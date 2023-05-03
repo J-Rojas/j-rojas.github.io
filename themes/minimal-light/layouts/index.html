@@ -38,7 +38,7 @@
                 {{ end }}
             </header>
 
-            {{ partial "navbar.html" }}
+            {{ partial "navbar.html" . }}
 
             {{ range where (where .Pages.ByWeight "Params.draft" "==" false) "Params.weight" "!=" 0 }}
                 <section>

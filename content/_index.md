@@ -5,7 +5,7 @@ date: 2022-10-24
 
 ## Papers
 
-- **[2022]** ["A study of methods to address MNLI data set artifacts in the Electra-Small LLM"](https://bit.ly/3nBlX7A) *Final Report for NLP - Spring '22*
+- **[2022]** ["A study of methods to address MNLI data set artifacts in the Electra-Small LLM"](./files/NLP_report.pdf) *Final Report for NLP - Spring '22*
 
 ## Publications & Articles
 
