@@ -36,3 +36,17 @@
         background-color: $color-page-background-dark;
     }
 }
+
+
+@media only screen and (max-width: 960px) {
+    .navbar {
+        top: 0px;
+        margin: 0px;
+        width: 100%;
+
+        & ul li {
+            margin-right: 0;
+            flex-grow: 1;
+        }
+    }
+}

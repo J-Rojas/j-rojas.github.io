@@ -627,3 +627,9 @@ footer {
   display:none;
   font-family: monospace;
 }
+
+@media only screen and (max-width: 960px) {
+  header {
+      margin-top: 100px;
+  }
+}
