@@ -47,6 +47,19 @@
     });
     });
 </script>
+<script>
+(function() {
+    const element = document.querySelector('nav.navbar');
+
+    window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 0) {
+        element.classList.add('scrolled');
+    } else {
+        element.classList.remove('scrolled');
+    }
+    });
+})()
+</script>
 {{ with resources.Get "/assets/js/scale.fix.js"  }}
 <script src="{{ .RelPermalink }}"></script>
 {{ end }}
