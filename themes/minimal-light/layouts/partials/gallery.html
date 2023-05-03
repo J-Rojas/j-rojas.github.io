@@ -11,7 +11,7 @@
 </div>
 
 <template id="youtube_embed">
-    <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe src="" width="650" height="365" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </template>
 
 <script>
@@ -41,6 +41,8 @@
             if (src.indexOf('?') == -1) {
                 src += "?"
             }
+            image.width = window.visualViewport.width < 650 ? window.visualViewport.width : 650
+            image.height = image.width * 9/16
             image.src = src + "&autoplay=1"
         } else {
             // Create the image element
