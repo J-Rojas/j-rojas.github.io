@@ -236,15 +236,15 @@ papertitle {
       .image.avatar img {
         border-radius: 100%;
         width: 50%;
-        padding: 10px;
-        border: 1px solid white; /* Add a white border with a thickness of 4px */
+        padding: 8px;
+        border: 1px solid $color-page-background-dark; /* Add a white border with a thickness of 4px */
         // border: 1px solid #ddd;
         // padding: 3px;
         // box-shadow: 0 -1px 5px 1px rgba(200, 200, 200, 0.3);
       }
 
     #header .image.avatar {
-      margin: 0 0 1em 0;
+      margin: 0 0 0.8em 0;
       width: 8.00em;
     }
 
@@ -301,6 +301,10 @@ a:hover {
 @media (prefers-color-scheme: dark) {
   a {
     color:rgb(62, 183, 240);
+  }
+
+  .image.avatar img {
+    border: 1px solid $color-page-background; /* Add a white border with a thickness of 4px */
   }
 }
 
@@ -532,8 +536,8 @@ footer {
 
    .image.avatar img {
         border-radius: 100%;
-        width: 117px;
-        padding:20px;
+        width: 106px;
+        padding:8px;
       }
   #head1o2 {
     visibility: hidden;
@@ -589,7 +593,7 @@ footer {
   .image.avatar img {
       border-radius: 100%;
       width: 95px;
-      padding:20px;
+      padding: 8px;
   }
   #head1o2 {
     visibility: hidden;
