@@ -10,6 +10,8 @@ items:
       Thumbnail: http://img.youtube.com/vi/urLVCNMcrJg/0.jpg
       Description: A data visualization tool oriented towards multi-model engineering and scientific datasets. I built this tool using Python, Typescript, Vue with integration with ROS. I have used this during my robotics research for visualizing real time and prerecorded data, but have adapted it for other visualization and application related tasks.
       Links:
+        - Label: Videos
+          Url: gallery
         - Label: Article
           Url: https://towardsdatascience.com/autonomous-driving-dataset-visualization-with-python-and-vizviewer-24ce3d3d11a0
         - Label: Website
@@ -21,6 +23,8 @@ items:
       Thumbnail: http://img.youtube.com/vi/Oun_skUYX0U/0.jpg
       Description: This is a robotics project enabling augmention of consumer vehicles for autonmous vehicle research. Our effort was focused on reverse-engineering the control systems to allow full autonomous control a vehicle. I successfully researched and developed support for a new vehicle (Hyundai Sonata).  We were able to demonstrate autonmous control of steering and vehicle speed using Arduino and ROS along with a sensor suite of cameras, GNSS-RTK, radar. Our team's effort was published in the [New York Times](https://archive.is/UdxRY).
       Links:
+        - Label: Videos
+          Url: gallery
         - Label: Article
           Url: https://archive.is/UdxRY
         - Label: GitHub
@@ -48,6 +52,8 @@ items:
         - start: 5
       Description: "A vehicle path planning algorithm I developed that searches for potential trajectories using higher-order curve fitting to prioritize comfort and safety during lane changes and speed adjustments and secondly optimize for speed down the road. The project runs in a randomized highway simulator. The code was written in C++."
       Links:
+        - Label: Videos
+          Url: gallery
         - Label: GitHub
           Url: https://github.com/J-Rojas/Path-Planning-Demo
 

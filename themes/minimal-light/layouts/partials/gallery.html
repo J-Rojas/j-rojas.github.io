@@ -116,7 +116,7 @@
     }
 
     // Add event listeners to the thumbnails
-    const thumbnailList = document.querySelectorAll('img.open-gallery');
+    const thumbnailList = document.querySelectorAll('.open-gallery');
     for (let i = 0; i < thumbnailList.length; i++) {
       thumbnailList[i].addEventListener('click', (e) => {
         let addr = e.srcElement.dataset['gallery']

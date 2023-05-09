@@ -7,6 +7,7 @@
 {{ range .Page.Params.items }}
     <li class="row">
 
+      {{ $gallery := .Gallery }}
       <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;">
         <img src="{{.Thumbnail}}" class="{{cond (isset . "Gallery") "open-gallery" ""}} teaser img-fluid z-depth-1" data-gallery="{{.Gallery}}">
         {{if isset . "Gallery"}}
@@ -19,7 +20,11 @@
         <div class="desc" style="margin-bottom: 10px">{{$p.RenderString .Description}}</div>
         <div class="links">
           {{ range .Links }}
-          <a href="{{.Url}}" class="btn btn-sm" role="button" target="_blank" style="font-size:16px;">{{.Label}}</a>
+            {{if (eq .Url "gallery") }}
+            <a class="btn btn-sm open-gallery fakelink" role="button" style="font-size:16px;" data-gallery="{{$gallery}}">{{.Label}}</a>
+            {{else}}
+            <a href="{{.Url}}" class="btn btn-sm" role="button" target="_blank" style="font-size:16px;">{{.Label}}</a>
+            {{end}}
           {{ end }}
         </div>
       </div>
