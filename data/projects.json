@@ -59,6 +59,11 @@
         "path-planning": [
             { "full": "https://www.youtube.com/embed/OEOO98UNFH4?start=5",
               "thumb": "http://img.youtube.com/vi/OEOO98UNFH4/0.jpg" }
+        ],
+
+        "reinforcement-learning": [
+            { "full": "https://www.youtube.com/embed/3tdx-DMNszU",
+              "thumb": "https://img.youtube.com/vi/3tdx-DMNszU/maxresdefault.jpg" }
         ]
     }
 }

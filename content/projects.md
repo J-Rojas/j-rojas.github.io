@@ -56,6 +56,20 @@ items:
         - Label: GitHub
           Url: https://github.com/J-Rojas/Path-Planning-Demo
 
+    - Gallery: PROJECTS:reinforcement-learning
+      Title: Reinforcement Learning in Gameplay AI
+      Url: https://github.com/UTAustin-DL-2022-Team-Descenders/DL-Final-Project
+      Thumbnail: http://img.youtube.com/vi/3tdx-DMNszU/0.jpg
+      Video:
+        - id: 3tdx-DMNszU
+        - start: 0
+      Description: "This team project focuses on building an agent that learns a policy to play an ice hockey game using explicit in-game state as input. The agent is composed of multiple networks that are trained individually for specific tasks, e.g. acceleration, steering, plan a recovery action. The networks are combined together to create an end-to-end neural network that executes a policy without any hand-coded controllers. Policy gradients are used in training the networks with specific reward functions for each module."
+      Links:
+        - Label: Videos
+          Url: gallery
+        - Label: GitHub
+          Url: https://github.com/UTAustin-DL-2022-Team-Descenders/DL-Final-Project
+
 ---
 
 ## Projects
