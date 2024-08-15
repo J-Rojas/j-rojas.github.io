@@ -5,6 +5,7 @@ date: 2022-10-24
 
 ## Papers
 
+- **[2024]** {{<rawhtml>}}<a href="/files/masterthesis.pdf" target="_blank">"Analysis of Data Efficient and Budget Restricted Model Sparsity Training with Mixture of Experts"</a>{{</rawhtml>}} *Masters Thesis - Summer '24*
 - **[2022]** {{<rawhtml>}}<a href="https://tinyurl.com/nh99tjzb" target="_blank">"A study of methods to address MNLI data set artifacts in the Electra-Small LLM"</a>{{</rawhtml>}} *Final Report for NLP - Spring '22*
 
 ## Publications & Articles
