@@ -6,7 +6,7 @@ draft: false
 items:
     - Gallery: PROJECTS:vizviewer
       Title: Vizviewer
-      Url: https://vizviewer.com
+      Url: https://vizviewer.com/demo
       Thumbnail: http://img.youtube.com/vi/urLVCNMcrJg/0.jpg
       Description: A data visualization application oriented towards multi-model engineering and scientific datasets. I built this tool using Python, Typescript, Vue with integration with ROS. I have used this during my robotics research for visualizing real time and pre-recorded sensor and algorithm outputs, but have adapted it for other related tasks, including as an extension to Python Notebooks for data science research and customizable dashboards.
       Links:
@@ -15,7 +15,7 @@ items:
         - Label: Article
           Url: https://towardsdatascience.com/autonomous-driving-dataset-visualization-with-python-and-vizviewer-24ce3d3d11a0
         - Label: Website
-          Url: https://vizviewer.com
+          Url: https://vizviewer.com/demo
 
     - Gallery: PROJECTS:opencaret
       Title: OpenCaret
